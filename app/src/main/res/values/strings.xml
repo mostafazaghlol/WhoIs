@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Who Is</string>
+    <string name="question">Who is</string>
+    <string name="playerName1">Messi</string>
+    <string name="playerName2">Ronaldo</string>
+    <string name="playerName3">kross</string>
+    <string name="playerName4">Salah</string>
+    <string name="playerName5">Bale</string>
+    <string name="playerName6">Neymar</string>
+    <string name="result">Result</string>
+</resources>
