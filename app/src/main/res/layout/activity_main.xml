@@ -11,7 +11,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:id="@+id/MessiLayout">
 
         <TextView
             android:layout_width="match_parent"
@@ -41,6 +42,7 @@
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
                 android:src="@mipmap/aita"
+                android:id="@+id/aitaPic"
                 android:onClick="theWrongPlayer"
                 />
 
@@ -50,7 +52,8 @@
                 android:scaleType="centerCrop"
                 android:layout_weight="1"
                 android:src="@mipmap/messi"
-                android:onClick="theWritePlayer"/>
+                android:id="@+id/MessiPicture"
+                />
         </LinearLayout>
 
 
@@ -58,7 +61,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:id="@+id/RonaldoLinearlayout">
 
             <TextView
                 android:layout_width="match_parent"
@@ -87,7 +91,8 @@
                     android:layout_height="200dp"
                     android:layout_weight="1"
                     android:scaleType="centerCrop"
-                    android:onClick="theWritePlayer"
+
+                    android:id="@+id/RonaldoPic"
                     android:src="@mipmap/ronaldo2" />
 
                 <ImageView
@@ -95,8 +100,8 @@
                     android:layout_height="200dp"
                     android:scaleType="centerCrop"
                     android:layout_weight="1"
-                    android:onClick="theWrongPlayer"
 
+                    android:id="@+id/RobbenPic"
                     android:src="@mipmap/robben" />
             </LinearLayout>
 
@@ -105,7 +110,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:id="@+id/KrossLinearlayout">
 
             <TextView
                 android:layout_width="match_parent"
@@ -135,7 +141,8 @@
                     android:layout_weight="1"
                     android:scaleType="centerCrop"
                     android:src="@mipmap/aita"
-                    android:onClick="theWrongPlayer"
+                    android:id="@+id/Atia2"
+
                     />
 
                 <ImageView
@@ -143,8 +150,9 @@
                     android:layout_height="200dp"
                     android:scaleType="centerCrop"
                     android:layout_weight="1"
+                    android:id="@+id/KrossPic"
                     android:src="@mipmap/tonikroos"
-                    android:onClick="theWritePlayer"/>
+                    />
             </LinearLayout>
 
 
@@ -152,7 +160,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:id="@+id/salahLinearlayout">
 
             <TextView
                 android:layout_width="match_parent"
@@ -182,14 +191,16 @@
                     android:layout_weight="1"
                     android:scaleType="centerCrop"
                     android:src="@mipmap/salah"
-                    android:onClick="theWritePlayer"/>
+                    android:id="@+id/salahPic"
+                    />
 
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="200dp"
                     android:scaleType="centerCrop"
                     android:layout_weight="1"
-                    android:onClick="theWrongPlayer"
+                    android:id="@+id/hendersonPic"
+
 
                     android:src="@mipmap/henderson" />
             </LinearLayout>
@@ -199,7 +210,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:id="@+id/BaleLinearLayout">
 
             <TextView
                 android:layout_width="match_parent"
@@ -229,15 +241,17 @@
                     android:layout_weight="1"
                     android:scaleType="centerCrop"
                     android:src="@mipmap/bale"
-                    android:onClick="theWritePlayer"/>
+                    android:id="@+id/BalePic"
+                    />
 
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="200dp"
                     android:scaleType="centerCrop"
                     android:layout_weight="1"
+                    android:id="@+id/kakaPic"
                     android:src="@mipmap/kaka"
-                    android:onClick="theWrongPlayer"
+
                     />
             </LinearLayout>
 
@@ -246,7 +260,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:id="@+id/NeymarLinearlayout">
 
             <TextView
                 android:layout_width="match_parent"
@@ -276,26 +291,29 @@
                     android:layout_weight="1"
                     android:scaleType="centerCrop"
                     android:src="@mipmap/neymar"
-                    android:onClick="theFinalWritePlayer"/>
+                    android:id="@+id/NeymarPic"
+                    />
 
                 <ImageView
                     android:layout_width="0dp"
                     android:layout_height="200dp"
                     android:layout_weight="1"
                     android:scaleType="centerCrop"
-                    android:onClick="theWrongPlayer"
+
+                    android:id="@+id/daniPic"
 
                     android:src="@mipmap/dani" />
             </LinearLayout>
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/result"
-                android:onClick="Result"/>
 
 
         </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/result"
+            android:id="@+id/resultbt"/>
+
 
     </LinearLayout>
 
